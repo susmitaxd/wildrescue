@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Sitemap for Wild Rescues website -->
+    
+    <!-- Home Page -->
+    <url>
+        <loc>https://www.wildrescues.com/index.html</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- About Us Page -->
+    <url>
+        <loc>https://www.wildrescues.com/about.html</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Partnership Page -->
+    <url>
+        <loc>https://www.wildrescues.com/partnership.html</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Gallery Page -->
+    <url>
+        <loc>https://www.wildrescues.com/gallery.html</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- FAQs Page -->
+    <url>
+        <loc>https://www.wildrescues.com/faqs.html</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Contact Us Page -->
+    <url>
+        <loc>https://www.wildrescues.com/contact.html</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Template Page -->
+    <url>
+        <loc>https://www.wildrescues.com/template.html</loc>
+        <lastmod>2024-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+</urlset>

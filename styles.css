@@ -1,0 +1,280 @@
+/*
+Author: Sunita Kumari Khadka
+Date: 11/05/2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, video {
+    margin: 0;
+    padding: 0;  
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #f6eee4;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for skip navigation link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+.skip:focus {
+    color: #fff;
+    background-color: #2a1f14;
+    text-decoration: none;
+    padding: 0.5%;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #2a1f14;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
+}
+
+/* Mobile Navigation styles (added as per request) */
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+/* Style rules for class and id selectors */
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+/* Style rules for table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1% 0;
+}
+
+th, td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+    text-align: left;
+}
+
+th {
+    background-color: #2a1f14;
+    color: white;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+    background-color: #deccba; /* Style for odd rows */
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+/* Mobile and other media queries... */
+
+/* Mobile style rules section */
+@media (max-width: 768px) {
+    nav.tab-desk {
+        display: none; /* Hide desktop navigation on small screens */
+    }
+    #nav-links {
+        display: none; /* Hide the nav links on mobile */
+    }
+    .mobile-nav {
+        display: block; /* Show mobile navigation */
+    }
+
+    /* Mobile Nav Area Style Rules */
+    nav ul {
+        display: block; /* This is for mobile nav layout */
+    }
+
+    /* Mobile h1 Style Rule */
+    .mobile h1 {
+        font-size: 1.5em;  /* Add font size adjustment for h1 in mobile */
+        margin: 2% 0 0 3%; /* Added margin to the h1 */
+    }
+
+    /* Mobile Nav Item style rules */
+    .mobile-nav a {
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Mobile hamburger icon styles */
+    .mobile-nav a.nav-icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #f6eee4;
+        padding: 2%;
+    }
+
+    .nav-icon div {
+        height: 40px;
+        width: 40px;
+        color: #2a1f14;
+    }
+
+    /* Add the new style rules as requested */
+    #questions p {
+        cursor: pointer;
+    }
+
+    #answer {
+        text-align: center;
+        font-weight: bold;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #answer h2 {
+        display: none;
+    }
+
+    /* Style rule for images within the social class */
+    .social img {
+        display: inline-block;
+        padding: 4%;
+    }
+}
+
+/* Tablet Media Query */
+@media (max-width: 1024px) {
+    /* Tablet Nav Area Style Rules */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        font-family: Geneva, Arial, sans-serif; /* Moved here from mobile */
+        font-weight: bold; /* Moved here from mobile */
+        font-size: 1.5em;
+    }
+
+    /* Tablet Navigation links style rules */
+    nav li a {
+        color: #f6eee4;  /* Moved from mobile */
+        text-align: center; /* Moved from mobile */
+        font-size: 2em;  /* Moved from mobile */
+        text-decoration: none;  /* Moved from mobile */
+        display: block; /* Moved from mobile */
+        padding: 0.5em 2em; /* Added back padding for tablet */
+    }
+
+    /* Hide mobile navigation on tablet and larger screens */
+    .mobile-nav {
+        display: none; /* Hide mobile navigation on tablet */
+    }
+
+    /* Tablet Viewport: Style rules for footer area */
+    footer {
+        font-size: 1em; /* Adjust font size for footer in tablet */
+        padding: 2% 0;  /* Increase padding for footer */
+        overflow: auto; /* Add overflow auto for better content management */
+    }
+
+    footer a {
+        font-size: 1.1em; /* Adjust font size for footer links */
+    }
+
+    /* New style rules for footer, copyright, and social class */
+    .copyright {
+        float: left;
+        width: 65%; /* Copyright section takes up 65% of the width */
+    }
+
+    .social {
+        float: right;
+        width: 25%; /* Social links take up 25% of the width */
+    }
+}

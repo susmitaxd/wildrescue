@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name: Sunita Kumari Khadka
+    File Name: contact.html
+    Today's Date: 11/13/2024
+-->
+
+<html lang="en">
+<head>
+    <title>Contact Us – Location | Wild Rescues</title> <!-- Updated title -->
+    <meta charset="utf-8">
+    <meta name="description" content="Contact us at (814)555-8989 or visit us at 8989 Rescue Drive, Ocala, FL for more information."> <!-- Added meta description -->
+    <link rel="stylesheet" href="CSS/styles.min.css">
+
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a class="skip" href="#content">Skip to Content</a>
+    <nav class="mobile-nav">
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="partnership.html">Partnership</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="nav-icon" onclick="hamburger()">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
+    
+
+    <header>
+        <a href="index.html">
+            <img src="images/baby-hawk.jpg" alt="rescued baby hawk">
+        </a>
+        <nav class="tab-desk"> <!-- Added class "tab-desk" here -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <main id="content">
+
+        <div id="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <p>Email us at <a href="mailto:contact@wildrescues.net" class="link">contact@wildrescues.net</a></p>
+            <p>Visit us at <a href="https://www.google.com/maps/place/Wild+Rescues" target="_blank" class="link">123 Rescue Lane, Ocala, FL</a></p>
+        </div>
+
+        <div id="form">
+            <h2>Complete the form below and we will contact you soon.</h2>
+            <form class="form-grid"><!-- Start Form -->
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName">
+
+                    <label for="bName">Name of Business:</label>
+                    <input type="text" name="bName" id="bName">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <p>I would like more information about:</p>
+
+                    <label for="vol">
+                        <input type="radio" name="info" id="vol" value="Volunteering">
+                        Volunteering
+                    </label>
+
+                    <label for="sponsor">
+                        <input type="radio" name="info" id="sponsor" value="Sponsorship Opportunities">
+                        Sponsorship Opportunities
+                    </label>
+
+                    <label for="wild">
+                        <input type="radio" name="info" id="wild" value="Wildlife">
+                        Wildlife
+                    </label>
+
+                    <label for="other">
+                        <input type="radio" name="info" id="other" value="Other">
+                        Other, please specify below.
+                    </label>
+
+                    <label for="questions">What questions do you have for us?</label>
+                    <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+                </fieldset>
+
+                <input type="submit" id="submit" class="btn" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright"> <!-- Added div with class "copyright" -->
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
+        </div>
+        
+        <div class="social"> <!-- Added div with class "social" -->
+            <!-- Facebook Logo -->
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/fb.png" alt="Facebook logo" height="40" width="40">
+            </a>
+            
+            <!-- Twitter Logo -->
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter logo" height="40" width="40">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

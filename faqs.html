@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name: Sunita Kumari Khadka
+    File Name: faqs.html
+    Today's Date: 11/13/2024
+-->
+
+<html lang="en">
+<head>
+    <title>FAQs | Wild Rescues</title> <!-- Title updated -->
+    <meta charset="utf-8">
+    <meta name="description" content="Have questions? Visit our FAQs page to find answers about animal rescues, volunteering, and more."> <!-- Meta description added -->
+    <link rel="stylesheet" href="CSS/styles.min.css">
+
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a class="skip" href="#content">Skip to Content</a>
+
+    <nav class="mobile-nav">
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="partnership.html">Partnership</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="nav-icon" onclick="hamburger()">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
+    
+    <header>
+        <a href="index.html">
+            <img src="images/baby-hawk.jpg" alt="rescued baby hawk">
+        </a>
+        <nav class="tab-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   <main id="content">
+
+        <div id="questions"> <!-- Added the id "questions" here -->
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>What types of animals do you rescue?</h3>
+            <p>We rescue a wide variety of wildlife including raccoons, squirrels, foxes, birds, and more. We also assist in the rescue and rehabilitation of reptiles, deer, pigs, and horses.</p>
+
+            <h3>How can I help Wild Rescues?</h3>
+            <p>You can help by donating, volunteering, or even becoming a partner with us. We also appreciate the support of local businesses and individuals who can offer their time and resources.</p>
+
+            <h3>Do you accept injured animals directly?</h3>
+            <p>Yes, we do accept injured, sick, or orphaned wildlife. If you find an animal in need, please contact us immediately. We may provide transportation or give instructions on how to safely help the animal.</p>
+            
+            <h3>What happens to animals after they are rehabilitated?</h3>
+            <p>Once an animal has been rehabilitated and is fit to survive in the wild, we release them back to their natural habitat. We aim to release every animal in the same area where they were found, ensuring a smooth transition back into the wild.</p>
+
+            <!-- Nested paragraph elements with onclick handlers -->
+            <p onclick="ansl()">How can I determine if a baby animal is an orphan?</p>
+            <p onclick="ans2()">How can I tell if an animal has rabies?</p>
+            <p onclick="ans3()">I found a baby bird that fell from its nest. Will the parents orphan it if I touch it?</p>
+            <p onclick="ans4()">How can I volunteer?</p>
+        </div>
+
+        <!-- New div with id "answer" -->
+        <div id="answer"> 
+            <h2>Answer:</h2> 
+            <p></p> <!-- Empty paragraph that will be populated dynamically with answers -->
+        </div>
+
+    </main>
+    <footer>
+        <div class="copyright"> <!-- Added div with class "copyright" -->
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
+        </div>
+        
+        <div class="social"> <!-- Added div with class "social" -->
+            <!-- Facebook Logo -->
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/fb.png" alt="Facebook logo" height="40" width="40">
+            </a>
+            
+            <!-- Twitter Logo -->
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter logo" height="40" width="40">
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
